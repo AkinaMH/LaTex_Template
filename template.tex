@@ -1,0 +1,181 @@
+%CSDN文章https://mp.csdn.net/console/home?spm=1000.2115.3001.4503
+
+%% Copyright 2007-2020 Elsevier Ltd
+
+
+%\documentclass[1p]{elsarticle} %单栏
+\documentclass[5p]{elsarticle} %双栏
+%\documentclass[5p,times,12pt]{elsarticle}%更多调节选项
+
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+
+%\usepackage[switch]{lineno}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+\usepackage{lineno}
+
+\journal{Nuclear Physics B}
+
+
+\begin{document}
+%\linenumbers
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \affiliation{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%% \fntext[label3]{}
+
+\title{Deep Convolutional Neural Network Compression via Coupled Tensor Decomposition}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \affiliation[label1]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%%
+%% \affiliation[label2]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+
+\author[address1]{W Sun \corref{cor1}}
+\ead{Sun@qq.com}
+\cortext[cor1]{Corresponding author}%corresponding author
+
+\author[address2]{S Chen}
+\ead{Chen@qq.com}
+
+\author[address1]{Y You}
+\ead{You@qq.com}
+
+\address[address1]{Shenzhen, Guangdong, China}
+\address[address2]{Guangzhou, Guangdong, China}
+
+
+
+\begin{abstract}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word
+\end{abstract}
+
+
+\begin{keyword}
+compression \sep neural network \sep coupled tensor decomposition
+\end{keyword}
+
+
+\end{frontmatter}
+
+
+%% main text
+\section{Introduction}
+\label{intro}
+
+\subsection{yes}
+
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+
+\subsection{no}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+
+\section{Related Works}
+\label{rw}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. \cite{SunCHSX21}
+
+Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word. Hello, word.\ref{intro}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+\bibliographystyle{elsarticle-num}
+\bibliography{refs}
+
+%% else use the following coding to input the bibitems directly in the
+%% TeX file.
+
+%\begin{thebibliography}{00}
+%
+%%% \bibitem{label}
+%%% Text of bibliographic item
+%
+%\bibitem{}
+%
+%\end{thebibliography}
+
+
+\end{document}
+
